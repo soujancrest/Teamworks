@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Stem Regular";
+  src: url("/assets/font/Stem/Stem-Regular.woff");
+  src: url("/assets/font/Stem/Stem-Regular.woff2");
+}
+@font-face {
+  font-family: "Stem Medium";
+  src: url("/assets/font/Stem/Stem-Regular.woff");
+  src: url("/assets/font/Stem/Stem-Regular.woff2");
+}
+@font-face {
+  font-family: "Stem Thin";
+  src: url("/assets/font/Stem/Stem-Thin.woff");
+  src: url("/assets/font/Stem/Stem-Thin.woff2");
+}
+@font-face {
+  font-family: "Stem Light";
+  src: url("/assets/font/Stem/Stem-Light.woff");
+  src: url("/assets/font/Stem/Stem-Light.woff2");
+}
+@font-face {
+  font-family: "Stem ExtraLight";
+  src: url("/assets/font/Stem/Stem-ExtraLight.woff");
+  src: url("/assets/font/Stem/Stem-ExtraLight.woff2");
+}
+@font-face {
+  font-family: "Stem Bold";
+  src: url("/assets/font/Stem/Stem-Bold.woff");
+  src: url("/assets/font/Stem/Stem-Bold.woff2");
+}
+@font-face {
+  font-family: "Bon Vivant Bold";
+  src: url("/assets/font/Bon_Vivant_Serif/Bon\ Vivant\ Serif\ Bold.woff");
+  src: url("/assets/font/Bon_Vivant_Serif/Bon\ Vivant\ Serif\ Bold.woff2");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Stem Thin";
+}
+a {
+  text-decoration: none !important;
+  color: #132628 !important;
+}
+a:hover {
+  text-decoration: none !important;
+  color: #132628 !important;
+}
+.row {
+  margin: 0 !important;
+}
+header {
+  background-color: #132628;
+  z-index: 999999;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 2rem 0;
+}
+.header ul {
+  display: flex;
+  margin: 0;
+}
+.header ul li {
+  list-style: none;
+  padding: 0 2.5rem;
+  margin: 0;
+}
+/* .header .logo {
+    width: 35%;
+  } */
+.header .logo img {
+  width: 60%;
+}
+.header span {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.banner {
+  height: 150vh;
+}
+
+.container2 {
+  /* hide fixed overflow contents */
+  clip: rect(0, auto, auto, 0);
+
+  /* does not work if overflow = visible */
+  overflow: hidden;
+
+  /* only works with absolute positioning */
+  /* position: absolute; */
+
+  /* Make sure containers are full-width and height */
+  height: 60vh;
+  left: 0;
+  width: 100%;
+
+  /* safari hack */
+  -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+}
+#container3 {
+  height: 90vh;
+}
+
+.container_solid {
+  background: #132628;
+
+  /* position this container at the top of its parent element */
+  top: 0;
+}
+.title_wrapper h1 {
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-top: 20%;
+}
+.image_wrapper img {
+  width: 30%;
+}
+.image_wrapper {
+  text-align: center;
+  position: relative;
+  top: 50vh;
+}
+.text-button {
+  margin-top: 2rem;
+}
+.text-button a {
+  color: #ffffff !important;
+}
+.text-button span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container_image {
+  /* Grab a free image from unsplash */
+  background-image: url("/assets/home-page/Villa.gif");
+  background-size: 100vw auto;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  /* position the second container below the first container */
+  top: 100vh;
+}
+
+/* About Us Section */
+.about {
+  background-color: #132628;
+  position: relative;
+  padding: 6rem 0 6rem 0;
+}
+.about .heading {
+  margin: 0 0 2rem 0;
+}
+.about .heading h1 {
+  opacity: 0.302;
+  font-size: 14rem;
+  color: #ffffff;
+  font-family: "Stem Bold";
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
+}
+.about .para p {
+  color: #ffffff;
+  line-height: 2rem;
+}
+.discover {
+  background-color: #00abde;
+  padding: 1rem;
+  border-radius: 30px;
+  border: none;
+}
+.discover span {
+  color: #ffffff;
+  padding: 1rem 2rem;
+}
+/* About Us Section End*/
+
+/* Service Section*/
+.services-sec {
+  padding: 5rem 0;
+}
+.services-sec .heading h1 {
+  font-family: "Stem Bold";
+  font-size: 4.5rem;
+  color: #132628;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.services-sec .heading span {
+  font-size: 1rem;
+  margin-right: 3rem;
+  letter-spacing: 0px;
+}
+.text-right {
+  text-align: right;
+  display: block !important;
+  margin-bottom: 5rem !important;
+}
+.services-sec .sub-heading h5 {
+  font-family: "Stem Regular";
+}
+.services-sec .para p {
+  font-family: "Stem Light";
+  font-size: 0.9rem;
+}
+.services-sec ul {
+  margin-top: 2rem;
+  padding-left: 1rem;
+}
+.services-sec ul li {
+  font-family: "Stem Regular";
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.services-sec li::marker {
+  color: #00abde;
+}
+/* Service Section End*/
+
+/* Projects Section */
+.projects-sec {
+  padding: 1rem 0 1rem 0;
+  background-color: #132628;
+}
+.projects-sec .container-full {
+  margin-left: 7%;
+}
+.projects-sec .text-side {
+  padding: 10rem 0 0 0;
+}
+.projects-sec .text-side .heading h1 {
+  font-family: "Stem Medium";
+  font-size: 4.5rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.projects-sec .para p {
+  color: #5cc7d1;
+  width: 50%;
+  line-height: 34px;
+  margin: 2rem 0px;
+}
+.projects-sec .view-project {
+  border: 1px solid #ffffff;
+  padding: 12rem 0 2rem 2rem;
+}
+.projects-sec .view-project .text p {
+  color: #ffffff;
+  margin: 1rem 0;
+}
+.projects-sec .view-project:hover {
+  background-image: url("/assets/home-page/Project-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: none;
+  .logo img {
+    display: none;
+  }
+}
+.view-project-col {
+  padding: 0 !important;
+}
+.view-project .logo img {
+  width: 30%;
+}
+/* Projects Section End */
+
+/* Clients Section */
+.clients-sec {
+  padding: 5rem 0;
+}
+.clients-sec .text-side {
+  margin: 2rem 0;
+}
+.clients-sec .heading h1 {
+  font-family: "Stem Medium";
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 5rem;
+  letter-spacing: 0.2rem;
+}
+.clients-sec .outline h1 {
+  opacity: 0.5;
+  font-size: 7rem;
+  font-family: "Stem Bold";
+  -webkit-text-stroke: 1px #5cc7d1;
+  -webkit-text-fill-color: transparent;
+}
+.clients-sec .para-col {
+  display: flex;
+  align-items: center;
+}
+.clients-sec .para p {
+  font-family: "Stem Medium";
+  line-height: 2rem;
+  width: 80%;
+}
+.clients-sec .client-logo {
+  text-align: center;
+  padding: 1rem 1rem;
+}
+.clients-sec .client-logo img {
+  width: 70%;
+}
+/* Clients Section End */
+
+/* Footer */
+footer {
+  background-color: #132628;
+  color: #ffffff;
+}
+footer .upper-footer {
+  margin-bottom: 4rem;
+}
+footer .text-links {
+  margin-bottom: 1rem;
+}
+footer a span {
+  color: #ffffff;
+  font-family: "Stem Thin";
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+.footer {
+  padding: 4rem 0;
+}
+footer .upper-text p {
+  border-left: 1px solid #fff;
+  padding-left: 1rem;
+}
+.footer .lower-text h1 {
+  opacity: 0.3;
+  font-size: 7rem;
+  font-family: "Stem Bold";
+  -webkit-text-stroke: 1px #ffffff;
+  -webkit-text-fill-color: transparent;
+}
+.footer .slag p {
+  color: #fce02b;
+  opacity: 0.5;
+}
+/* Footer End */
+
+@media screen and (max-width: 620px) {
+  .banner {
+    height: 102vh;
+  }
+  .container_image {
+    background-size: 200vw auto;
+    background-attachment: inherit;
+  }
+  .container2 {
+    height: 40vh;
+  }
+  #container3 {
+    height: 62vh;
+  }
+  .about .heading h1 {
+    font-size: 5rem;
+  }
+  .title_wrapper h1 {
+    font-size: 2.3rem;
+    margin-top: 25%;
+  }
+  .image_wrapper {
+    top: 40vh;
+  }
+  .image_wrapper img {
+    width: 50%;
+  }
+  .text-button {
+    margin-top: 1rem;
+  }
+  .text-button span {
+    font-size: 1rem;
+  }
+  .services-sec .heading h1 {
+    display: block;
+    font-size: 3rem;
+  }
+  .services-sec .heading span {
+    margin-bottom: 2rem;
+  }
+  .text-right {
+    text-align: left;
+    margin-bottom: 2rem !important;
+  }
+  .projects-sec .text-side {
+    padding: 3rem 0 3rem 0;
+  }
+  .projects-sec .text-side .heading h1 {
+    font-size: 2.5rem;
+  }
+  .projects-sec .para p {
+    width: 100%;
+  }
+  .clients-sec {
+    padding: 0;
+  }
+  .clients-sec .heading h1 {
+    font-size: 2.5rem;
+    line-height: normal;
+    letter-spacing: 0;
+  }
+  .clients-sec .outline h1 {
+    font-size: 5rem;
+  }
+  .clients-sec .para p {
+    width: 100%;
+  }
+  .footer .lower-text h1 {
+    font-size: 5rem;
+  }
+  .footer .left-side {
+    margin-bottom: 1rem;
+  }
+}
